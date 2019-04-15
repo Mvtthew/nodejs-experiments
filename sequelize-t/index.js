@@ -9,6 +9,9 @@ app.use(bodyParser.urlencoded({extended: true}));
 // Api routes
 app.use('/api', require('./routes/api'));
 
+// Users/auth routes
+app.use('/auth', require('./routes/auth'));
+
 
 // Api INIT
 const PORT = 3000;
