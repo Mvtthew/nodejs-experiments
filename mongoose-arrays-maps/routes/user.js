@@ -11,7 +11,6 @@ router.post('/register', (req, res) => {
 	const { name, email, password } = req.body;
 
 	if (name && email && password) {
-
 		encrypt(password).then(hashed => {
 			User.create({
 				name,
@@ -19,7 +18,6 @@ router.post('/register', (req, res) => {
 				password: hashed
 			}).then(user => res.json(user));
 		});
-
 	} else {
 		res.json({
 			msg: 'all fields are required'
