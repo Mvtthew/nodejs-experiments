@@ -1,0 +1,17 @@
+{
+  "name": "mongoose-arrays-maps",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "author": "Mateusz Ozog",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.5.2",
+    "simple-sha256": "^1.0.0"
+  }
+}
