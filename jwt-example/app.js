@@ -50,7 +50,7 @@ app.post('/api/login', (req, res) => {
 function verifyToken(req, res, next) {
 
     // Get auth header value
-    const bearerHeader = req.headers['authorization'];
+    const bearerHeader = req.headers['Authorization'];
 
     // If token is sent
     if (typeof bearerHeader !== "undefined") {
